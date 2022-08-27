@@ -9,7 +9,8 @@ session = Session()
 session.mount('https://', HTTPAdapter(max_retries=Retry(total=30,allowed_methods=['GET'])))
 
 usernamemoodleid = []
-header = {'User-Agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:99.0) Gecko/20100101 Firefox/99.0'}
+header = {'User-Agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.72 Safari/537.36'}
+#header = {'User-Agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:99.0) Gecko/20100101 Firefox/99.0'}
 
 #created by anonedev
 def delete(user,passw,host,urls,proxy):
